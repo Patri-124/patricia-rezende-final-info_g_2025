@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap 5.2.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <!-- Tipografias Google Fonts -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend&family=Averia+Serif+Libre&family=Libre+Baskerville&display=swap">
+
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/b8e4dd9897.js" crossorigin="anonymous"></script>
+    <!-- Galeria -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <!-- Hoja de estilos CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+    
+
+    <!-- Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Patricia Boníssima</title>
+</head>
+
+<body>
+    <header>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid nav">
+
+      <!-- Contacto: visible en ambos (desktop y mobile) -->
+      <a href="./contacto/index.html" class="text-uppercase ms-4 px-3 py-2 nav-link nav-btn d-none d-lg-block start rounded-1">Contacto</a>
+
+      <!-- Info: solo desktop -->
+      <a href="./info/index.html" class="text-uppercase ms-4 px-3 py-2 nav-link nav-btn d-none d-lg-block start rounded-1">Info</a>
+
+      <!-- Logo en mobile -->
+      <div class="nav-item link-exclude d-block d-lg-none ms-2">
+        <a class="nav-link link-exclude nav-logo-mobile" href="index.html">
+          <img src="img/logo.png" alt="Patri Bonissima">
+        </a>
+      </div>
+
+      <!-- Botón hamburguesa -->
+      <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+        type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-icon top-bar black"></span>
+        <span class="toggler-icon middle-bar black"></span>
+        <span class="toggler-icon bottom-bar black"></span>
+      </button>
+
+      <!-- Menú mobile (collapse) + desktop -->
+      <div class="collapse navbar-collapse justify-content-lg-center ps-5" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 d-lg-flex align-items-start">
+
+          <!-- Inicio solo mobile -->
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link text-danger" href="index.html">Inicio</a>
+          </li>
+
+          <!-- Contacto en mobile -->
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link text-danger" href="./contacto/index.html">Contacto</a>
+          </li>
+
+          <!-- Secciones comunes -->
+          <li class="nav-item me-0 me-md-1 me-xl-4 me-xxl-5">
+            <a class="lang nav-link text-lg-center" href="./sobre/index.html">Sobre</a>
+          </li>
+          <li class="nav-item me-0">
+            <a class="lang nav-link text-lg-center" href="./galeria/index.html">Galería</a>
+          </li>
+
+          <!-- Logo desktop -->
+          <li class="nav-item link-exclude d-none d-lg-block">
+            <a class="nav-link link-exclude navlogo mx-2 mx-lg-3 mx-xxl-5" href="index.html">
+              <img src="img/logo.png" alt="Patri Bonissima">
+            </a>
+          </li>
+
+          <li class="nav-item me-0 me-md-1 me-xl-4 me-xxl-5">
+            <a class="lang nav-link text-lg-center" href="./trabajo/index.html">Trabajos</a>
+          </li>
+          <li class="nav-item">
+            <a class="lang nav-link text-lg-center" href="./juego/index.html">Juego</a>
+          </li>
+
+          <!-- Instagram solo en mobile -->
+          <li class="nav-item d-flex d-lg-none flex-row mt-4">
+            <a href="https://www.instagram.com/PatriciaBonissima/" class="offcanvas-logo align-self-start m-0" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Videos solo en desktop -->
+      <a href="./video/index.html" class="text-uppercase me-4 px-3 py-2 nav-link nav-btn d-none d-lg-block start rounded-1">Videos</a>
+
+    </div>
+  </nav>
+</header>
+
+<!-- Contenido principal de la página -->
+    <main>
+ <!-- Sección principal -->
+        <section class="d-flex justify-content-center align-items-center" id="seccion-principal">
+
+            <h1 class="mx-auto" id="titulo-principal">Patri Boníssima</h1>
+
+        </section>
+<!-- Sección de Sobre -->
+    
+            
+
+       
+
+<section class="d-flex flex-column justify-content-center align-items-center" id="seccion-sobre">
+    <div id="imgporta"></div> 
+    
+
+            <h1 class="text-white my-5">Sobre</h1>
+
+                <div class="card p-5 col-10 col-lg-8 col-xxl-6">
+                    <h2>La Mujer en el Caso</h2>
+                    <p>La mujer en el caso<br>
+                        Es la voz que no se calla<br>
+                        Es el cuerpo que no se doblega<br>
+                        Es el grito que se oye<br>
+                        Incluso cuando se está en silencio...
+                    </p>
+                </div>
+
+            <a href="sobre/index.html" class="btn btn-more text-uppercase my-5 py-3 px-5 mx-auto fs-3">Ver más</a>
+
+        </section>
+    
+    </main>
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Carousel Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Galeria -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+    <!-- Galeria js -->
+    <script src="js/lightbox-plus-jquery.js"></script>
+    <!-- Carousel js -->
+    <script src="js/carousel.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

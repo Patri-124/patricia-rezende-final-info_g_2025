@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Juego de Memoria</title>
+  <!-- Tipografias Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend&family=Averia+Serif+Libre&family=Libre+Baskerville&display=swap">
+
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+
+<body class="bg-dark text-white">
+ <header>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid nav">
+
+      <!-- Contacto: visible en ambos (desktop y mobile) -->
+      <a href="../contacto/index.html" class="text-uppercase ms-4 px-3 py-2 nav-link nav-btn d-none d-lg-block start rounded-1">Contacto</a>
+
+      <!-- Info: solo desktop -->
+      <a href="../info/index.html" class="text-uppercase ms-4 px-3 py-2 nav-link nav-btn d-none d-lg-block start rounded-1">Info</a>
+
+      <!-- Logo en mobile -->
+      <div class="nav-item link-exclude d-block d-lg-none ms-2">
+        <a class="nav-link link-exclude nav-logo-mobile" href="../index.html">
+          <img src="../img/logo.png" alt="Patri Bonissima">
+        </a>
+      </div>
+
+      <!-- Botón hamburguesa -->
+      <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+        type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-icon top-bar black"></span>
+        <span class="toggler-icon middle-bar black"></span>
+        <span class="toggler-icon bottom-bar black"></span>
+      </button>
+
+      <!-- Menú mobile (collapse) + desktop -->
+      <div class="collapse navbar-collapse justify-content-lg-center ps-5" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 d-lg-flex align-items-start">
+
+          <!-- Inicio solo mobile -->
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link text-danger" href="../index.html">Inicio</a>
+          </li>
+
+          <!-- Contacto en mobile -->
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link text-danger" href="../contacto/index.html">Contacto</a>
+          </li>
+
+          <!-- Secciones comunes -->
+          <li class="nav-item me-0 me-md-1 me-xl-4 me-xxl-5">
+            <a class="lang nav-link text-lg-center" href="../sobre/index.html">Sobre</a>
+          </li>
+          <li class="nav-item me-0">
+            <a class="lang nav-link text-lg-center" href="../galeria/index.html">Galería</a>
+          </li>
+
+          <!-- Logo desktop -->
+          <li class="nav-item link-exclude d-none d-lg-block">
+            <a class="nav-link link-exclude navlogo mx-2 mx-lg-3 mx-xxl-5" href="../index.html">
+              <img src="../img/logo.png" alt="Patri Bonissima">
+            </a>
+          </li>
+
+          <li class="nav-item me-0 me-md-1 me-xl-4 me-xxl-5">
+            <a class="lang nav-link text-lg-center" href="../trabajo/index.html">Trabajos</a>
+          </li>
+          <li class="nav-item">
+            <a class="lang nav-link text-lg-center" href="../juego/index.html">Juego</a>
+          </li>
+
+          <!-- Instagram solo en mobile -->
+          <li class="nav-item d-flex d-lg-none flex-row mt-4">
+            <a href="https://www.instagram.com/PatriciaBonissima/" class="offcanvas-logo align-self-start m-0" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Videos solo en desktop -->
+      <a href="../video/index.html" class="text-uppercase me-4 px-3 py-2 nav-link nav-btn d-none d-lg-block start rounded-1">Videos</a>
+
+    </div>
+  </nav>
+</header>
+
+
+  <!-- ********** Main (Juego de Memoria) ********** -->
+  <main id="memory-game">
+  <section class="d-flex flex-column align-items-center justify-content-center min-vh-100 bg-black text-white py-5">
+    <h1 class="mb-4 text-center" style="font-family: 'Lexend'; text-shadow: hotpink 2px 2px;">
+      Juego de Memoria
+    </h1>
+    <p class="text-center mb-4 fs-5">
+      ¿Podés reconstruir la memoria visual de Patri Boníssima? Encontrá los pares y revelá su identidad.
+    </p>
+
+    <div class="container">
+      <div id="game-board" class="row g-4 justify-content-center"></div>
+
+      <div class="text-center mt-4">
+        <div id="message" class="fs-4 fw-bold mb-3" style="font-family: 'Lexend'; color: #00ffff; text-shadow: 1px 1px hotpink;"></div>
+        <button id="restartBtn" class="btn btn-light d-none">Jugar de nuevo</button>
+        <div id="timer" class="mt-3 fw-bold fs-4 text-info" style="font-family: 'Lexend'; text-shadow: 1px 1px hotpink;">
+          ⏱ Tiempo: 0s
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Tu JS del juego -->
+  <script src="../js/juego.js"></script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    
+    <!-- Bootstrap 5.2.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    
+    
+    <!-- Tipografias Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend&family=Averia+Serif+Libre&family=Libre+Baskerville&display=swap">
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/b8e4dd9897.js" crossorigin="anonymous"></script>
+    
+    <!-- Hoja de estilos CSS -->
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Sobre</title>
+</head>
+
+<body>
+    <header>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid nav">
+
+      <!-- Contacto: visible en ambos (desktop y mobile) -->
+      <a href="../contacto/index.html" class="text-uppercase ms-4 px-3 py-2 nav-link nav-btn d-none d-lg-block start rounded-1">Contacto</a>
+
+      <!-- Info: solo desktop -->
+      <a href="../info/index.html" class="text-uppercase ms-4 px-3 py-2 nav-link nav-btn d-none d-lg-block start rounded-1">Info</a>
+
+      <!-- Logo en mobile -->
+      <div class="nav-item link-exclude d-block d-lg-none ms-2">
+        <a class="nav-link link-exclude nav-logo-mobile" href="../index.html">
+          <img src="../img/logo.png" alt="Patri Bonissima">
+        </a>
+      </div>
+
+      <!-- Botón hamburguesa -->
+      <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+        type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-icon top-bar black"></span>
+        <span class="toggler-icon middle-bar black"></span>
+        <span class="toggler-icon bottom-bar black"></span>
+      </button>
+
+      <!-- Menú mobile (collapse) + desktop -->
+      <div class="collapse navbar-collapse justify-content-lg-center ps-5" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 d-lg-flex align-items-start">
+
+          <!-- Inicio solo mobile -->
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link text-danger" href="../index.html">Inicio</a>
+          </li>
+
+          <!-- Contacto en mobile -->
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link text-danger" href="../contacto/index.html">Contacto</a>
+          </li>
+
+          <!-- Secciones comunes -->
+          <li class="nav-item me-0 me-md-1 me-xl-4 me-xxl-5">
+            <a class="lang nav-link text-lg-center" href="../sobre/index.html">Sobre</a>
+          </li>
+          <li class="nav-item me-0">
+            <a class="lang nav-link text-lg-center" href="../galeria/index.html">Galería</a>
+          </li>
+
+          <!-- Logo desktop -->
+          <li class="nav-item link-exclude d-none d-lg-block">
+            <a class="nav-link link-exclude navlogo mx-2 mx-lg-3 mx-xxl-5" href="../index.html">
+              <img src="../img/logo.png" alt="Patri Bonissima">
+            </a>
+          </li>
+
+          <li class="nav-item me-0 me-md-1 me-xl-4 me-xxl-5">
+            <a class="lang nav-link text-lg-center" href="../trabajo/index.html">Trabajos</a>
+          </li>
+          <li class="nav-item">
+            <a class="lang nav-link text-lg-center" href="../juego/index.html">Juego</a>
+          </li>
+
+          <!-- Instagram solo en mobile -->
+          <li class="nav-item d-flex d-lg-none flex-row mt-4">
+            <a href="https://www.instagram.com/PatriciaBonissima/" class="offcanvas-logo align-self-start m-0" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Videos solo en desktop -->
+      <a href="../video/index.html" class="text-uppercase me-4 px-3 py-2 nav-link nav-btn d-none d-lg-block start rounded-1">Videos</a>
+
+    </div>
+  </nav>
+</header>
+
+
+    <main>
+
+        <section class="d-flex justify-content-center align-items-center" id="seccion-principal">
+
+            <h1 class="mx-auto" id="titulo-principal">Sobre</h1>
+
+        </section>
+
+        <section class="d-flex flex-column justify-content-center align-items-center py-5" id="seccion-sobre">
+
+             <h1 class="text-white my-5">Multiartista</h1> 
+
+            <div class="d-flex flex-column flex-lg-row col-8 mb-5">
+                <div class="card p-5 me-lg-5 col-lg-6">
+                    <h2>La Mujer en el Caso</h2>
+                    
+                    <p>La mujer en el caso <br>
+                        Es la cabeza del camino <br>
+                        Es el lugar del mundo <br>
+                        Donde se puede ir <br>
+                        Con las piernas sueltas <br>
+                        O con las piernas atadas <br> <br>
+                        
+                        La mujer en el caso <br>
+                        Es lo que se dice con coraje <br>
+                        Es el grito en medio del silencio <br>
+                        Es la fuerza que no se acaba <br>
+                        Es el luto que se convierte en fiesta <br> <br>
+                        
+                        La mujer en el caso <br> 
+                        Es la voz que no se calla <br>
+                        Es el cuerpo que no se doblega <br>
+                        Es el grito que se oye <br>
+                        Incluso cuando se está en silencio <br> <br>
+                        
+                        La mujer en el caso <br>
+                        Es lo que se necesita ser <br>
+                        Incluso cuando se es <br>
+                        Lo que no se quiere ser <br>
+                        Es el coraje <br>
+                        Que se desdobla <br>
+                        Y se muestra <br>
+                        En el deseo más íntimo <br>
+                        <strong>Poema: Pagu (Patrícia Galvão)</strong>
+                    </p>
+                </div>
+                <div class="card p-5 ms-lg-5 col-lg-6">
+                    <h2> Sobre mi</h2>
+                    <p>Actualmente, Patricia está inmersa en sus estudios de Licenciatura en Artes Multimediales en la Universidad Nacional de las Artes (UNA). <br>
+                        Esta experiencia académica subraya su compromiso constante con el aprendizaje y la expansión de sus habilidades, en un entorno que le brinda la oportunidad de explorar nuevas formas de expresión creativa.<br>
+
+                        Además de su trabajo artístico, Patricia también se dedica a la traducción y revisión, habilidades que complementan su perfil profesional y le permiten aplicar su atención al detalle y pasión por la comunicación en un contexto diferente. <br>
+                        Su enfoque multidisciplinario y su continua búsqueda de crecimiento personal y profesional la convierten en una artista integral y apasionada.
+                        
+                        
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-lg-row col-8">
+                <div class="card p-5 me-lg-5 col-lg-6 mb-5 ">
+                    <h2>Bailando en su pasado</h2>
+
+                        <p> Desde su infancia, el interés por las artes se manifestó cuando, a los 3 años, su madre, con el anhelo de cumplir su sueño de ser bailarina, la introdujo al ballet. A pesar de su timidez, continuó bailando y explorando otros estilos. En casa, el baile se convirtió en una expresión constante gracias al estímulo de su madre.<br><br>
+                        
+                        Aunque disfrutaba diseñar ropas y jugar como cualquier niña, durante la adolescencia interrumpió su camino en la danza. Fue después de esta etapa, ya en la adultez, cuando descubrió el teatro. Aunque no siguió bailando, el teatro se convirtió en una nueva forma de expresión artística que enriqueció su conexión con las artes escénicas.
+            
+                        
+                    </p>
+                </div>
+                <div class="card p-5 ms-lg-5 mb-5 col-lg-6">
+                    <h2>Mudanza a la Pauliceia Desvaraida</h2>
+                    <p>A los 22 años, me mudé a São Paulo, cariñosamente conocida como la "Pauliceia Desvairada," un término un término popularizado por Mário de Andrade para describir su agitada vida urbana. Durante dos años, estudió actuación, antes de especializarse en dirección de arte para teatro, un curso que completó en 2013. Su carrera comenzó como asistente de escenografía y en el manejo de utilería, pero encontró su verdadera pasión en el maquillaje y el vestuario. Trabajó en el reconocido Teatro Oficina, donde dedicó cuatro años a la caracterización, maquillaje y peinado. Además, ha colaborado con otros artistas prestigiosos, desempeñándose en roles de maquillaje y vestuario en proyectos de dirección de arte para cine y publicidad.
+                        </p>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-lg-row col-8">
+                <div class="card p-5 me-lg-5 col-lg-6">
+                    <h2>Tierras Platenses</h2>
+                    <p>
+                        <strong><em>Que el río de la Plata te mece / y en su cuna de olas te arrulla</em></strong>
+                    <em>(Fragmento de "Río de la Plata" de Carlos Gardel)</em> <br> <br>  
+                    Después de vivir ocho años en São Paulo trabajando con teatro, Patri decidió ir a estudiar una carrera de graduación, pues en Brasil no había tenido la oportunidad. Así, decidió cruzar el río en 2018... La elección de mudarse a Argentina fue motivada por la calidad educativa y la oportunidad de acceder a una universidad pública y gratuita. Al llegar a Argentina, tuvo que remar mucho para sostener los estudios, pero sigue remando y remando...   
+                
+                
+                
+                </p>
+                </div>
+                <div class="card p-5 ms-lg-5 col-lg-6">
+                    <h2> Formación  </h2>
+                    <p>Canto | Escuela de Música Popular de Avellaneda - 2020/2023. <br>
+                        Artes Multimediales | Universidad Nacional de las Artes - 2019 en curso.<br>
+                        Dirección de Arte | SP Escola de Teatro - 2011/2013.<br><br>
+                        <h2> Manejo de Programas </h2> 
+                        <p>Manejo del programa “Adobe Premiere Pro
+                            CC” nivel Intermedio.<br>
+                            Manejo del programa “Adobe Photoshop”
+                            nivel básico.<br>
+                            Manejo del programa “Adobe After Effects
+                            Pro CC” nivel básico.<br>
+                            Manejo del programa “Reaper” nivel
+                            Intermedio.<br>
+                            Manejo del programa “Paquete Office” nivel
+                            intermedio.<br>
+                            Manejo de" internet" nivel intermedio.</p>
+                </div>
+            </div>
+            <a href="../complementarias/otrosproyectos.html" class="btn btn-more text-uppercase my-5 py-3 px-5 mx-auto fs-3">Otros Proyectos</a>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

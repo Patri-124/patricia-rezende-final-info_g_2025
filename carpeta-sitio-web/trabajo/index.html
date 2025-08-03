@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap 5.2.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+     <!-- Tipografias Google Fonts -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend&family=Averia+Serif+Libre&family=Libre+Baskerville&display=swap">
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/b8e4dd9897.js" crossorigin="anonymous"></script>
+    <!-- Galeria -->
+    <link rel="stylesheet" href="../css/lightbox.css">
+    <!-- Hoja de estilos CSS -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Patri Bonissima</title>
+    
+</head>
+
+<body>
+    <header>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid nav">
+
+      <!-- Contacto: visible en ambos (desktop y mobile) -->
+      <a href="../contacto/index.html" class="text-uppercase ms-4 px-3 py-2 nav-link nav-btn d-none d-lg-block start rounded-1">Contacto</a>
+
+      <!-- Info: solo desktop -->
+      <a href="../info/index.html" class="text-uppercase ms-4 px-3 py-2 nav-link nav-btn d-none d-lg-block start rounded-1">Info</a>
+
+      <!-- Logo en mobile -->
+      <div class="nav-item link-exclude d-block d-lg-none ms-2">
+        <a class="nav-link link-exclude nav-logo-mobile" href="../index.html">
+          <img src="../img/logo.png" alt="Patri Bonissima">
+        </a>
+      </div>
+
+      <!-- Botón hamburguesa -->
+      <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+        type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-icon top-bar black"></span>
+        <span class="toggler-icon middle-bar black"></span>
+        <span class="toggler-icon bottom-bar black"></span>
+      </button>
+
+      <!-- Menú mobile (collapse) + desktop -->
+      <div class="collapse navbar-collapse justify-content-lg-center ps-5" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 d-lg-flex align-items-start">
+
+          <!-- Inicio solo mobile -->
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link text-danger" href="../index.html">Inicio</a>
+          </li>
+
+          <!-- Contacto en mobile -->
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link text-danger" href="../contacto/index.html">Contacto</a>
+          </li>
+
+          <!-- Secciones comunes -->
+          <li class="nav-item me-0 me-md-1 me-xl-4 me-xxl-5">
+            <a class="lang nav-link text-lg-center" href="../sobre/index.html">Sobre</a>
+          </li>
+          <li class="nav-item me-0">
+            <a class="lang nav-link text-lg-center" href="../galeria/index.html">Galería</a>
+          </li>
+
+          <!-- Logo desktop -->
+          <li class="nav-item link-exclude d-none d-lg-block">
+            <a class="nav-link link-exclude navlogo mx-2 mx-lg-3 mx-xxl-5" href="../index.html">
+              <img src="../img/logo.png" alt="Patri Bonissima">
+            </a>
+          </li>
+
+          <!--<li class="nav-item me-0 me-md-1 me-xl-4 me-xxl-5">
+            <a class="lang nav-link text-lg-center" href="../trabajo/index.html">Trabajos</a>
+          </li>-->
+          
+                <!-- Dropdown para "Trabajos" -->
+                <li class="nav-item dropdown me-0 me-md-1 me-xl-4 me-xxl-5">
+                  <a class="lang nav-link dropdown-toggle text-lg-center" href="#" id="trabajosDropdown" role="button" data-bs-toggle="dropdown" data-bs-boundary="viewport" aria-expanded="false">
+                    Entre
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="trabajosDropdown">
+                    <li><a class="dropdown-item" href="../trabajo/secundarias/origenes.html">Orígenes</a></li>
+                    <li><a class="dropdown-item" href="../trabajo/secundarias/oiko.html">Oiko</a></li>
+                    <li><a class="dropdown-item" href="../trabajo/secundarias/canvas.html">Canvas</a></li>
+                    <li><a class="dropdown-item" href="../trabajo/secundarias/bod-art.html">Body Art</a></li>
+                    <li><a class="dropdown-item" href="../trabajo/secundarias/teatro-oficina.html">Teatro Oficina</a></li>
+                    <li><a class="dropdown-item" href="../trabajo/secundarias/bando.html">Bando Jaçanã</a></li>
+                    <li><a class="dropdown-item" href="../trabajo/secundarias/opera.html">Ópera</a></li>
+                    <li><a class="dropdown-item" href="../trabajo/secundarias/ascencao.html">Ascensão</a></li>
+                    <li><a class="dropdown-item" href="../trabajo/secundarias/redes.html">Redes</a></li>
+                  </ul>
+                </li>
+          
+          <li class="nav-item">
+            <a class="lang nav-link text-lg-center" href="../juego/index.html">Juego</a>
+          </li>
+
+          <!-- Instagram solo en mobile -->
+          <li class="nav-item d-flex d-lg-none flex-row mt-4">
+            <a href="https://www.instagram.com/PatriciaBonissima/" class="offcanvas-logo align-self-start m-0" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Videos solo en desktop -->
+      <a href="../video/index.html" class="text-uppercase me-4 px-3 py-2 nav-link nav-btn d-none d-lg-block start rounded-1">Videos</a>
+
+    </div>
+  </nav>
+</header>
+
+      
+      
+
+<main>
+
+    
+    
+
+<section class="d-flex justify-content-center align-items-center" id="seccion-principal">
+
+            <h1 class="mx-auto" id="titulo-principal">Trabajos</h1>
+            <div id="contenido">
+               
+           </div> 
+        
+        </section>
+
+        <section class="d-flex flex-column justify-content-center align-items-center" id="seccion-trabajo">
+            
+          <div class="card col-10 col-lg-7 p-5 card-fondo-gif">
+                
+                <h2>Explora mi Universo Artístico</h2>
+                <p> Para comenzar el recorrido, hacé clic en Entre_ desde el menú principal. Allí vas a encontrar el acceso a mis trabajos, organizados en distintas experiencias visuales.
+                </p>  
+
+               
+                          
+                    <h2>Navega para Descubrir</h2>
+                    <p>Cada categoría, dirección de arte, maquillaje, vestuario y artes multidisciplinarias y revela una parte de mi lenguaje visual. Estas piezas no son solo obras terminadas, sino capítulos de un proceso en constante transformación.<br>
+                        Agradezco tu curiosidad y espero que disfrutes navegando a través de estas creaciones que han dado forma a mi viaje artístico.
+
+                        Con inspiración,
+                        Patri Boníssima
+                
+                
+                    </p>
+
+            </div>
+        
+            
+                  
+                
+               
+        
+        </section>
+
+    </main>
+
+    <script src="js/lightbox-plus-jquery.js"></script>
+</body>
+
+</html>
